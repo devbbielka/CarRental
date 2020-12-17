@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    android:background="@drawable/round_conner_whitebg"
+    android:padding="16dp"
+
+ >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnClose"
+        android:background="@drawable/ic_close"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFullName"
+        android:drawableLeft="@drawable/ic_person"
+        android:layout_marginTop="30dp"
+        android:hint="Full Name"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:padding="10dp"
+        android:layout_below="@id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:layout_below="@id/txtFullName"
+        android:layout_marginTop="30dp" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConfirmPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:gravity="center"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:layout_below="@id/txtPassword"
+        android:layout_marginTop="30dp" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnRegister"
+        android:layout_below="@id/txtConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Register"
+        android:textColor="@color/colorSecondary"
+        android:background="@color/colorThird"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="105dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingLeft="25dp"
+        android:background="@drawable/round_conner_whitebg"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Id: "
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/itemUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Id"
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserId"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/itemEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemUserId"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name: "
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemEmail"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/itemFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full name"
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemEmail"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role: "
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemEmail"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/itemRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:textColor="@color/colorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemEmail"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="10dp"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_conner_whitebg"
+    tools:context=".fragment.CustomerNeedsFragment">
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/carCategoryEdit"
+        android:layout_marginTop="30dp"
+        android:hint="@string/hintCarCategory"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/carColor"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Color"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@id/carCategoryEdit"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/carSeats"
+        android:ems="10"
+        android:hint="Number of Seat"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@id/carColor"
+        android:layout_marginTop="15dp"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/carHighestPrice"
+        android:layout_marginTop="15dp"
+        android:hint="Highest Price"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:padding="10dp"
+        android:layout_below="@id/carSeats"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/carLowestPrice"
+        android:ems="10"
+        android:hint="Lowest Price"
+        android:textColor="@color/colorSecondary"
+        android:textColorHint="@color/colorSecondary"
+        android:backgroundTint="@color/colorSecondary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@id/carHighestPrice"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"/>
+    <CheckBox
+        android:id="@+id/carHourlyRent"
+        android:layout_weight="1"
+        android:textColor="@color/colorSecondary"
+        app:buttonTint="@color/colorSecondary"
+        android:text="Hourly Rent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carLowestPrice"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnSearchNeeds"
+        android:layout_below="@id/carHourlyRent"
+        android:layout_centerHorizontal="true"
+        android:text="Search"
+        android:textColor="@color/colorSecondary"
+        android:background="@color/colorThird"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

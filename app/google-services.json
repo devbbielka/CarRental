@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "840728861605",
+    "firebase_url": "https://week6carrental.firebaseio.com",
+    "project_id": "week6carrental",
+    "storage_bucket": "week6carrental.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840728861605:android:df323acfbc9bb08a",
+        "android_client_info": {
+          "package_name": "com.example.week6labcarrental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840728861605-cdlqqfaf35ba3rom0sbdlmhggicdreoa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.week6labcarrental",
+            "certificate_hash": "fcfc7749681d5d86ed8e35ea8062774dc00a3b66"
+          }
+        },
+        {
+          "client_id": "840728861605-egustdi4s2uqoucq2v02t3pqheumsfpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.week6labcarrental",
+            "certificate_hash": "874864b8110a1e3cfcc560e1f6834a7ea536faee"
+          }
+        },
+        {
+          "client_id": "840728861605-vti7rikd8asj6ap51r0fsjui3o853ffv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmS9EeofOiUnw50JQhFuwmaJ0r444uA4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840728861605-vti7rikd8asj6ap51r0fsjui3o853ffv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

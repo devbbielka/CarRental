@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.ManagerActivity">
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:singleLine="false"
+        android:text="@string/managerTitle"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/myTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Cars" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Users" />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Orders" />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+    </android.support.design.widget.TabLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/btnAddNew"
+            android:layout_below="@id/carAvailableCheckBox"
+            android:text="Add New Car"
+            android:textColor="@color/colorSecondary"
+            android:background="@color/colorThird"
+            />
+
+    <LinearLayout
+        android:id="@+id/searchBox"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="25dp"
+        />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnSearch"
+            android:layout_below="@id/carAvailableCheckBox"
+            android:text="Search"
+            android:textColor="@color/colorSecondary"
+            android:background="@color/colorThird"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myRec"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+         />
+</LinearLayout>
+
